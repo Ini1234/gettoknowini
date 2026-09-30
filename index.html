@@ -3,377 +3,461 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <!-- =====BOX ICONS===== -->
+    <meta
+      name="description"
+      content="Ini Ekanem is a Software Engineer with 6+ years building highly available, AI-powered backend systems across fintech and SaaS."
+    />
+    <meta name="author" content="Ini Ekanem" />
+    <title>Ini Ekanem | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap"
       rel="stylesheet"
     />
-
-    <title>Ini Ekanem</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <!--===== HEADER =====-->
     <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#" class="nav__logo">Ini Ekanem</a>
-        </div>
+      <nav class="nav wrap" aria-label="Primary">
+        <a href="#home" class="nav__logo">Ini Ekanem</a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
+            <li><a href="#work" class="nav__link">Work</a></li>
+            <li><a href="#expertise" class="nav__link">Expertise</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
         </div>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </header>
 
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Hi,<br />My name is <span class="home__title-color">Ini</span><br />
-            I am a SWE
-          </h1>
-
-          <a href="#contact" class="button">Ways to Contact Me</a>
+    <main>
+      <section class="hero wrap" id="home">
+        <div class="hero__copy">
+          <p class="eyebrow">Ottawa · Senior Software Engineer</p>
+          <h1 class="hero__name">Ini Ekanem</h1>
+          <p class="hero__role">
+            I design and ship highly available backend systems: distributed,
+            event-driven, and increasingly AI-native.
+          </p>
+          <p class="hero__lede">
+            Six years across fintech and SaaS. I own architecture from first
+            sketch through on-call. Currently a software engineer on several
+            products at Second Engine, Picton Mahoney.
+          </p>
+          <div class="hero__actions">
+            <a href="#work" class="btn">Selected work</a>
+            <a
+              href="https://drive.google.com/file/d/1lDEgRKAiRu8mrIXBIyUTNoDVpwAbRgEQ/view?usp=sharing"
+              class="btn btn--ghost"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume</a
+            >
+          </div>
         </div>
-
-        <div class="home__social">
-          <a href="https://www.linkedin.com/in/ini-abasiekanem/" target="_blank" class="home__social-icon"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://docs.google.com/document/d/1AUWNlGn7DU4PzhH4HxfKh5yJz8-WBbR7kOY-lnbk92Y/edit?usp=sharing" target="_blank" class="home__social-icon"
-            ><i class="bx bxs-book"></i
-          ></a>
-          <a href="https://github.com/Iniabasi" target="_blank" class="home__social-icon"><i class="bx bxl-github"></i></a>
-        </div>
-
-        <div class="home__img">
-          <svg
-            class="home__blob"
-            viewBox="0 0 479 467"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <mask id="mask0" mask-type="alpha">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-              />
-            </mask>
-            <g mask="url(#mask0)">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-              />
-              <image
-                class="home__blob-img"
-                x="50"
-                y="60"
-                href="assets/img/Subject.png"
-              />
-            </g>
-          </svg>
-        </div>
+        <figure class="hero__photo">
+          <img src="assets/img/hero.jpg" alt="Ini Ekanem" />
+        </figure>
       </section>
 
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About Me</h2>
+      <section class="work wrap" id="work">
+        <header class="section-head">
+          <p class="eyebrow">Experience</p>
+          <h2>Selected work</h2>
+        </header>
 
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="assets/img/inipic3.jpeg" alt="" />
+        <article class="job">
+          <div class="job__meta">
+            <p class="job__dates">2024 – Present</p>
+            <p class="job__place">Toronto · Remote</p>
           </div>
-
-          <div>
-            <h2 class="about__subtitle">My name is Ini</h2>
-            <p class="about__text">
-              I am a Software Engineer with passion for test driven, maintainable and strategic software development. 
-              I have provide solutions to complex problems.
-              I possess fundamentals to learn new tools quickly and efficiently.
-              I have experience in all aspects of full stack software development life cycle of web and mobile application,
-              including designing, development, testing, implementation, deployment and maintenance. 
-              I have experience pushing a product from initial concept to delivery.
-              Currently, I work as a Fullstack developer at Versaterm, and during my spare time, I work on building
-              <a href="https://www.giftyf.com/" target="_blank">Giftyf</a>
+          <div class="job__body">
+            <h3>Software Engineer</h3>
+            <p class="job__org">
+              <a
+                href="https://secondengine.pictoninvestments.com/en/services"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Second Engine, Picton Mahoney</a
+              >
             </p>
+            <ul>
+              <li>
+                Software engineer on several Second Engine products: architecture,
+                delivery through ambiguity, on-call ownership, and highly
+                available systems at scale.
+              </li>
+              <li>
+                Built AI Insights for investment portfolios: live conversation
+                oversight, abuse flagging, and an automated judge that grades
+                response quality continuously.
+              </li>
+              <li>
+                Architected RAG, document intelligence, and LLM workflows to
+                raise retrieval accuracy and cut hallucination risk in
+                user-facing products.
+              </li>
+              <li>
+                Shipped semantic hybrid asset search on a securities knowledge
+                graph, plus an event-driven portfolio ingestion pipeline
+                (CSV, SFTP, Azure Blob, queues, webhooks).
+              </li>
+              <li>
+                Delivered portfolio versioning, capital market assumptions, and
+                MCP tools that give assistants structured access to internal
+                financial data.
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
+        </article>
 
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills__container bd-grid">
-          <div>
-            <h2 class="skills__subtitle">Professional Skills</h2>
-            <p class="skills__text">
-              Over the years, I have acquired several skills from several work
-              experiences I have had. Some of which include:
+        <article class="job">
+          <div class="job__meta">
+            <p class="job__dates">2026 – Present</p>
+            <p class="job__place">Ottawa</p>
+          </div>
+          <div class="job__body">
+            <h3>Full-Stack Engineer (Founder)</h3>
+            <p class="job__org">
+              <a
+                href="https://djanora.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Djanora</a
+              >
             </p>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-javascript skills__icon"></i>
-                <span class="skills__name">Full Stack Development</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxs-mobile skills__icon"></i>
-                <span class="skills__name">Mobile Apps Development</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bx-brain skills__icon"></i>
-                <span class="skills__name">Data Structures and Algorithms</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxs-paint skills__icon"></i>
-                <span class="skills__name">Software Design</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxs-data skills__icon"></i>
-                <span class="skills__name">Database Design</span>
-              </div>
-            </div>
+            <p class="job__blurb">
+              Event planning software for hosts and vendors. Budget, vendors,
+              guests, and the day-of schedule in one place. Hosts contract with
+              vendors directly; no booking commission.
+            </p>
+            <ul>
+              <li>
+                Designed and built a multi-tenant event planning product:
+                shared events with budget, checklist, schedule, guest list,
+                RSVP, and collaborator access, so hosts do not plan in
+                spreadsheets and chats.
+              </li>
+              <li>
+                Built a two-sided vendor flow: vendor profiles reviewed before
+                hosts can find them, plus host inquiries and messaging, with no
+                listing fee or booking cut.
+              </li>
+              <li>
+                Shipped guest-facing event sites: draft and publish, invite-only
+                vs open link, RSVP, and live event data (date, venue, schedule,
+                party) instead of a separate wedding CMS.
+              </li>
+              <li>
+                Owned the stack end to end: Next.js App Router and NestJS API,
+                PostgreSQL and Prisma, Clerk auth, Azure deploy, and a BFF so
+                the browser never talks to the API with ad-hoc fetch.
+              </li>
+              <li>
+                Implemented tenancy and access rules in the API (host vs editor
+                grants, invite-only guest pages, soft-delete) so private guest
+                lists and RSVP links stay private.
+              </li>
+              <li>
+                Added a first-party AI path (in-app assistant plus a remote MCP
+                connector) so hosts can operate the same account from Claude or
+                the product UI.
+              </li>
+            </ul>
           </div>
+        </article>
 
-          <div>
-            <h4>Programming Languages and Technologies</h2>
-            <ul class="skills__list">
-              <li>JavaScript/TypeScript (React, NestJS, React-Native, NodeJS, ExpressJS)</li>
-              <li>Python</li>
-              <li>Java</li>
-              <li>SQL</li>
-              <li>Ruby on Rails</li>
-              <li>Genero</li>
-              <li>Postgres</li>
-              <li>AWS</li>
-              <li>Azure</li>
-              <li>Figma</li>
-              <li>Apache Kafka</li>
-              <li>Redis</li>
-              <li>Elasticsearch</li>
-              <li>Tailwind CSS</li>
-              <li>Postman</li>
-              <li>SoapUI</li>
-              <li>Jenkins</li>
-              <li>Docker</li>
-          </ul>
+        <article class="job">
+          <div class="job__meta">
+            <p class="job__dates">2023 – 2024</p>
+            <p class="job__place">Ottawa</p>
           </div>
-        </div>
+          <div class="job__body">
+            <h3>Full Stack Developer, Records Management System</h3>
+            <p class="job__org">
+              <a
+                href="https://www.versaterm.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Versaterm</a
+              >
+            </p>
+            <ul>
+              <li>
+                Shipped enterprise Records Management System work in Genero 4GL, JavaScript, SQL,
+                PostgreSQL, AWS, and Linux.
+              </li>
+              <li>
+                Re-engineered report processing to run asynchronously with
+                process locks, 90% faster for multi-report jobs.
+              </li>
+              <li>
+                Led external APIs that unlocked third-party integrations and
+                thousands of dollars per client in new revenue.
+              </li>
+              <li>
+                Built shared CRUD libraries for auditing and consistent
+                standards; wrote ICDs and ran client-facing technical demos.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job__meta">
+            <p class="job__dates">2022 – 2023</p>
+            <p class="job__place">Ottawa</p>
+          </div>
+          <div class="job__body">
+            <h3>Software Application Developer</h3>
+            <p class="job__org">
+              <a
+                href="https://www.caseiq.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Case IQ</a
+              >
+            </p>
+            <ul>
+              <li>
+                Delivered tailored backend and full-stack work that contributed
+                to a 10%+ revenue lift.
+              </li>
+              <li>
+                Migrated 50+ TB of client data to Azure with integrity checks
+                and minimal downtime.
+              </li>
+              <li>
+                Raised support efficiency and CSAT by 15% through prioritized
+                fixes. Owned case-management SDLC on Jenkins, Docker, and Azure.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job__meta">
+            <p class="job__dates">2021 – 2022</p>
+            <p class="job__place">Ottawa</p>
+          </div>
+          <div class="job__body">
+            <h3>Software Engineer</h3>
+            <p class="job__org">
+              <a
+                href="https://ccxtechnologies.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CCX Technologies</a
+              >
+            </p>
+            <ul>
+              <li>
+                Root-cause work on system bugs with measurable performance
+                gains. Replaced manual tests with automation, cutting execution
+                time by 90%+.
+              </li>
+              <li>Python, Docker, Linux, and NGINX across the stack.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job__meta">
+            <p class="job__dates">2020 – Present</p>
+            <p class="job__place">Ottawa</p>
+          </div>
+          <div class="job__body">
+            <h3>Technical Founder</h3>
+            <p class="job__org">
+              <a
+                href="https://www.giftyf.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Giftyf</a
+              >
+            </p>
+            <ul>
+              <li>
+                Founded and architected a production SaaS platform end-to-end:
+                strategy, systems, infrastructure, and execution.
+              </li>
+              <li>
+                Next.js, React, TypeScript, NestJS, PostgreSQL, Redis, REST,
+                GraphQL. Auth, payments, checkout, and schemas built for
+                integrity and scale.
+              </li>
+              <li>
+                RAG and LLM workflows in product. Services on Docker and
+                Kubernetes. Native Android and iOS apps in pre-launch.
+              </li>
+            </ul>
+          </div>
+        </article>
       </section>
 
-      <!--===== WORK =====-->
-      <section class="work section" id="work">
-        <h2 class="section-title">Work</h2>
-        <div class="about__container bd-grid">
-            <div>
-              <h2 class="about__subtitle">
-                Fullstack Developer at <a href="https://www.versaterm.com" target="_blank">Versaterm</a> 
-              </h2>
-              <p><b>March 2023 - Date</b></p>
-              <br class="about__text">
-              <p>
-                I specialize in architecting, implementing, and optimizing robust APIs to facilitate seamless integration and efficient communication across diverse software systems.
-                Beyond API development, I contribute to customer support, resolving bugs, refining existing processes, and driving automation initiatives to enhance overall efficiency.
-                Harnessing the capabilities of cloud services, we strategically host several of our products on platforms like AWS and Azure, maximizing scalability and performance.
-              </p>
-            </div>
-            <div class="about__img">
-              <a href="https://www.versaterm.com" target="_blank">
-
-                <img src="assets/img/vlogo.png" alt="" />
-              </a>
-              </div>
-        </div>
-        <div class="about__container bd-grid">
-            <div>
-              <h2 class="about__subtitle">
-                Software Application Developer at <a href="https://www.caseiq.com" target="_blank">Case IQ FKA i-Sight</a>
-              </h2>
-              <p><b>Feb 2022 - Jan 2023</b></p>
-              <br class="about__text">
-              <p>
-                Each day, I dive into the dynamic world of the iSight application, bringing to life custom features tailored to meet both product specifications and customer demands. My toolkit includes Node.js, PostgreSQL, Docker, Jenkins, Yellowfin, Nginx, and more, enabling me to navigate through development challenges seamlessly. When not immersed in feature implementation, I'm diligently troubleshooting bugs, refining existing functionalities, or orchestrating data migration and integration tasks. A standout moment in my journey was when my dedication shone bright as I spearheaded the seamless completion of a sprint under intense deadline pressure. Witnessing satisfied customers and a delighted manager was truly gratifying
-              </p>
-            </div>
-            <div class="about__img">
-              <a href="https://www.caseiq.com" target="_blank">
-                <img src="assets/img/isight.jpeg" alt="" />
-              </a>
-            </div>
-        </div>
-        <div class="about__container bd-grid">
-            <div>
-              <h2 class="about__subtitle">
-                Software Engineer at <a href="https://ccxtechnologies.com/" target="_blank">CCX Technologies</a>
-              </h2>
-              <p><b>Sep 2021 - Feb 2022</b></p>
-              <br class="about__text">
-              <p>
-                During my tenure at CCX, I was an integral member of the software team, where our focus was on troubleshooting bugs and enhancing the system software. My responsibilities extended to crafting automated unit tests in Python, as well as managing server and client-side codebases in both Python and JavaScript. My expertise primarily revolved around Python, QEMU, GitHub, Jinja2, LXCs, Docker, Linux OS, databases, networking protocols, and SSH
-              </p>
-            </div>
-            <div class="about__img">
-              <a href="https://ccxtechnologies.com/" target="_blank"><img src="assets/img/ccx.jpeg" alt="" /></a>
-              
-            </div>
-        </div>
-        <div class="about__container bd-grid">
-            <div>
-              <h2 class="about__subtitle">
-                Software Engineer at <a href="https://healthsign.com/index.php">Healthsign</a>
-              </h2>
-              <p><b>May 2021 - Aug 2022</b></p>
-              <br class="about__text">
-              <p>
-                I worked with algorithms that analyze physiological data for providing diagnostics and alerts.
-                My main achievement was implementing an algorithm that reduced the time complexity of the entire program.
-                I mainly worked with Java, C, Swift and Matlab
-              </p>
-            </div>
-            <div class="about__img">
-              <a href="https://healthsign.com/index.php"><img src="assets/img/healthsign.jpeg" alt="" /></a>
-            </div>
-        </div>
-        
-        
-        <div class="about__container bd-grid">
-          <div>
-            <h2 class="about__subtitle">
-              Co-Founder and CTO of <a href="https://www.giftyf.com/" target="_blank">Giftyf</a>
-            </h2>
-            <p><b>2023 - Date</b></p>
-            <br class="about__text">
+      <section class="expertise wrap" id="expertise">
+        <header class="section-head">
+          <p class="eyebrow">Stack</p>
+          <h2>How I work</h2>
+        </header>
+        <p class="expertise__intro">
+          Production ownership first. Architecture that holds under load.
+          AI systems that can be graded, not just demoed.
+        </p>
+        <div class="expertise__grid">
+          <article>
+            <h3>Architecture</h3>
             <p>
-              At Giftyf, our mission revolves around developing a comprehensive two-way platform aimed at enhancing business logistics. This platform seamlessly integrates sales, advertising, warehousing, and delivery processes, harnessing the power of cutting-edge technologies to optimize efficiency. On one side, businesses benefit from streamlined operations and enhanced visibility, while on the other side, users can effortlessly discover businesses and make purchases, fostering a vibrant ecosystem of commerce and connectivity
+              Distributed systems, high availability, event-driven design,
+              microservices, REST and GraphQL, database design, SaaS platforms.
+            </p>
+          </article>
+          <article>
+            <h3>Languages</h3>
+            <p>
+              TypeScript, Node.js, Python, Kotlin, Swift. NestJS, Express,
+              FastAPI, React, Next.js.
+            </p>
+          </article>
+          <article>
+            <h3>AI engineering</h3>
+            <p>
+              Azure OpenAI, RAG, MCP servers, workflow automation, and quality
+              evaluation for live user-facing models.
+            </p>
+          </article>
+          <article>
+            <h3>Cloud</h3>
+            <p>
+              AWS, Azure, Kubernetes, Docker, CI/CD, Azure DevOps, queues,
+              webhooks, SFTP and blob integrations.
+            </p>
+          </article>
+          <article>
+            <h3>Data</h3>
+            <p>
+              PostgreSQL, SQL Server, MySQL, Redis, Elasticsearch, semantic
+              search, knowledge graphs.
+            </p>
+          </article>
+          <article>
+            <h3>Leadership</h3>
+            <p>
+              Mentorship, code review standards, agile delivery, stakeholder
+              partnership, on-call ownership.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about wrap" id="about">
+        <header class="section-head">
+          <p class="eyebrow">About</p>
+          <h2>The work, not the title</h2>
+        </header>
+        <div class="about__grid">
+          <figure class="about__photo">
+            <img src="assets/img/about.jpg" alt="Ini Ekanem" />
+          </figure>
+          <div class="about__copy">
+            <p>
+              I take systems from concept to production: APIs and
+              microservices on AWS and Azure, across web and mobile. I sit
+              with product, design, and the business, then hold the line on
+              reviews, design standards, and reliability.
+            </p>
+            <p>
+              Right now I am a software engineer on several products at
+              <a
+                href="https://secondengine.pictoninvestments.com/en/services"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Second Engine</a
+              >. I also designed and built
+              <a href="https://djanora.com" target="_blank" rel="noopener noreferrer"
+                >Djanora</a
+              >, and I still build
+              <a href="https://www.giftyf.com/" target="_blank" rel="noopener noreferrer"
+                >Giftyf</a
+              >.
+            </p>
+            <p class="about__edu">
+              BASc, Computer Engineering<br />
+              University of Ottawa
             </p>
           </div>
-          <div class="about__img">
-            <a href="https://www.giftyf.com/" target="_blank">
-              <img src="assets/img/quicklight.jpeg" alt="" />
-            </a>
-            
-          </div>
         </div>
-        <!-- <div class="about__container bd-grid">
-            <div>
-              <h2 class="about__subtitle">
-                OneHealthSpace
-              </h2>
-              <p><b>2021 - Date</b></p>
-              <br class="about__text">
-              <p>
-              My friend and I participated in Ciena Smart city design competition organised by engineers without borders uOttawa Chapter.
-              Our design was called iCare, it was built on the premise of making healthcare more accessible and affordable for the people of Iqaluit.
-               The design won us first place in the competition. 
-               After the competition, we looked at how we could use this design to solve a common problem in our world
-                so we created onehealthspace. 
-                Onehealthspace is a central platform that handles anything related to your medical records and access to medical practitioners. I am currently implementng the mvp, I anticipate to have it completed by the end of februray. I will attach a link then.
-                
-              </p>
-            </div>
-            <div class="about__img">
-              <img src="assets/img/ohs.jpeg" alt="" />
-            </div>
-          </div> -->
+      </section>
 
-        <!-- <div class="work__container bd-grid">
-          <a href="" class="work__img">
-            <img src="assets/img/work1.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work2.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work3.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work4.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work5.jpg" alt="" />
-          </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work6.jpg" alt="" />
-          </a>
-        </div>
-      </section> -->
-
-      <!--===== CONTACT =====-->
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
-
-        <div class="contact__container bd-grid">
-          <p><a href="mailto:iniabasi.e@yahoo.com">Email: iniabasi.e@yahoo.com</a></p>
-          <p><a href="tel:+16137002103">Mobile: +1-613-700-2103</a></p>
-          <!-- <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
-            <textarea
-              name=""
-              id=""
-              cols="0"
-              rows="10"
-              class="contact__input"
-            ></textarea>
-            <input
-              type="button"
-              value="Enviar"
-              class="contact__button button"
-            />
-          </form> -->
-        </div>
+      <section class="contact wrap" id="contact">
+        <header class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s talk</h2>
+        </header>
+        <p class="contact__lede">
+          Open to conversations about hard backend problems, AI in production,
+          and systems that have to hold up.
+        </p>
+        <ul class="contact__list">
+          <li>
+            <span>Email</span>
+            <a href="mailto:iniabasi.e@yahoo.com">iniabasi.e@yahoo.com</a>
+          </li>
+          <li>
+            <span>Phone</span>
+            <a href="tel:+16137002103">(613) 700-2103</a>
+          </li>
+          <li>
+            <span>LinkedIn</span>
+            <a
+              href="https://www.linkedin.com/in/ini-abasiekanem/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ini-abasiekanem</a
+            >
+          </li>
+          <li>
+            <span>GitHub</span>
+            <a
+              href="https://github.com/Ini1234"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ini1234</a
+            >
+          </li>
+          <li>
+            <span>Location</span>
+            <span class="contact__plain">Ottawa, ON</span>
+          </li>
+        </ul>
       </section>
     </main>
 
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-      <p class="footer__title">Ini Ekanem</p>
-      <div class="footer__social">
-        <a href="https://www.linkedin.com/in/ini-abasiekanem/" target="_blank" class="footer__icon"
-        ><i class="bx bxl-linkedin"></i
-      ></a>
-      <a href="https://docs.google.com/document/d/1AUWNlGn7DU4PzhH4HxfKh5yJz8-WBbR7kOY-lnbk92Y/edit?usp=sharing" target="_blank" class="footer__icon"
-        ><i class="bx bxs-book"></i
-      ></a>
-      <a href="https://github.com/Ini1234" target="_blank" class="footer__icon"><i class="bx bxl-github"></i></a>
-    </div>
-      <p class="footer__copy">&#169; Ini. All rigths reserved</p>
+    <footer class="footer wrap">
+      <p>© <span id="year">2026</span> Ini Ekanem</p>
+      <a
+        href="https://drive.google.com/file/d/1lDEgRKAiRu8mrIXBIyUTNoDVpwAbRgEQ/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Resume</a
+      >
     </footer>
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
